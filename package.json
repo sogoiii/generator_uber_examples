@@ -1,0 +1,24 @@
+{
+  "name": "Uber_testing_api",
+  "version": "0.0.1",
+  "author": "Angello Pozo",
+  "license": "MIT",
+  "homepage": "https://github.com:sogoiii/generator_uber_examples",
+  "repository": {
+    "type": "git",
+    "url" : "git@github.com:sogoiii/generator_uber_examples.git"
+  },
+  
+  "dependencies": {
+    "restify": "2.8.2",
+    "async": "0.9.0",
+    "bluebird" : "2.3.4",
+    "co": "3.1.0",
+    "thunkify": "2.1.2"
+  },
+
+  "engines": {
+    "node": "0.11.x",
+    "npm": "2.1.x"
+  }
+}
