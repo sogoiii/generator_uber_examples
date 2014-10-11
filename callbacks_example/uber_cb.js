@@ -49,7 +49,7 @@ var getUberInfo = function(options, callback){ //get info method Size: [max 57 :
 
     ], function(anyErr, allResults) {
       if(anyErr){
-        return callback(err);
+        return callback(anyErr);
       } else {
 
         var modifedOut = {
@@ -65,10 +65,10 @@ var getUberInfo = function(options, callback){ //get info method Size: [max 57 :
 
 
 var queryObj = {
-  start_latitude: locations.vixletHQ.latitude,
-  start_longitude: locations.vixletHQ.longitude,
-  end_latitude: locations.UCLA.latitude,
-  end_longitude: locations.UCLA.longitude
+  start_latitude: locations.home.latitude,
+  start_longitude: locations.home.longitude,
+  end_latitude: locations.vixletHQ.latitude,
+  end_longitude: locations.vixletHQ.longitude
 }
 
 getUberInfo({queryObj: queryObj}, function(err, data){
